@@ -1,15 +1,15 @@
 import React, { useState, useCallback } from 'react';
-import { ChatMessage, PdfChunk } from './types';
-import { processPdf } from './services/pdfProcessor';
-import { askQuestion } from './services/geminiService';
-import FileUpload from './components/FileUpload';
-import ChatInterface from './components/ChatInterface';
-import Sidebar from './components/Sidebar';
-import PracticeQuestions from './components/PracticeQuestions';
-import Glossary from './components/Glossary';
-import Flashcards from './components/Flashcards';
-import MindMap from './components/MindMap';
-import { SendIcon } from './components/icons';
+import { ChatMessage, PdfChunk } from './types.ts';
+import { processPdf } from './services/pdfProcessor.ts';
+import { askQuestion } from './services/geminiService.ts';
+import FileUpload from './components/FileUpload.tsx';
+import ChatInterface from './components/ChatInterface.tsx';
+import Sidebar from './components/Sidebar.tsx';
+import PracticeQuestions from './components/PracticeQuestions.tsx';
+import Glossary from './components/Glossary.tsx';
+import Flashcards from './components/Flashcards.tsx';
+import MindMap from './components/MindMap.tsx';
+import { SendIcon } from './components/icons.tsx';
 
 export type AppMode = 'qa' | 'practice' | 'glossary' | 'flashcards' | 'mindmap';
 
