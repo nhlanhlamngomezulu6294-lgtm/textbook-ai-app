@@ -1,20 +1,46 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# PrepPal - Your AI-Powered Study Assistant
 
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/drive/1SZ0ofSI_RncXTEUH14ID-0MypPFFYnX_
-
-## Run Locally
-
-**Prerequisites:**  Node.js
+PrepPal is an intelligent study application designed to help students and lifelong learners master their textbook content. By leveraging the power of Google's Gemini API, users can upload a PDF textbook and transform it into an interactive learning experience.
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## ✨ Key Features
+
+- **Interactive Q&A**: Ask natural language questions about the textbook content and receive answers backed by direct quotes and page number citations.
+- **Practice Questions**: Automatically generate a variety of practice questions (Multiple Choice, Short Answer, Essay) based on specific chapters, page ranges, or your recent Q&A history.
+- **Dynamic Glossary**: Instantly create a comprehensive glossary of key terms and concepts found within the document, complete with definitions and page references.
+- **Flashcard Decks**: Generate digital flashcards for focused study sessions, targeting the topics that matter most to you.
+- **Mind Maps (Coming Soon!)**: Visualize connections between concepts with automatically generated mind maps.
+
+## 🛠️ Technology Stack
+
+- **Frontend**: React, TypeScript, Tailwind CSS
+- **AI/LLM**: Google Gemini API (`gemini-2.5-flash`)
+- **PDF Processing**: Mozilla's PDF.js
+- **Deployment**: Vercel
+
+## 🚀 Getting Started
+
+This project is configured to be deployed easily on Vercel.
+
+### Deployment with Vercel
+
+1.  **Fork this repository** to your own GitHub account.
+2.  Go to [Vercel](https://vercel.com/) and sign up with your GitHub account.
+3.  Click **"Add New..."** -> **"Project"**.
+4.  Import your forked repository from the list.
+5.  In the **"Environment Variables"** section, add a new variable:
+    - **Name**: `API_KEY`
+    - **Value**: Your Google Gemini API key.
+6.  Click **"Deploy"**. Vercel will handle the rest!
+
+### Running Locally
+
+While designed for Vercel, you can run this project locally.
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/preppal-app.git
+    cd preppal-app
+    ```
+2.  **API Key**: The application expects the `API_KEY` to be available as an environment variable. You would typically use a tool like `dotenv` and a `.env` file for local development.
+3.  **Serve the files**: Use a simple local server (like the VS Code Live Server extension) to serve the `index.html` file.
