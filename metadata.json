@@ -1,0 +1,5 @@
+{
+  "name": "PrepPal",
+  "description": "An application that allows users to upload a PDF textbook and ask natural language questions about its content. The AI searches the document and provides answers with direct quotes and page numbers.",
+  "requestFramePermissions": []
+}
