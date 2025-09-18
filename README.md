@@ -33,14 +33,3 @@ This project is configured to be deployed easily on Vercel.
     - **Value**: Your Google Gemini API key.
 6.  Click **"Deploy"**. Vercel will handle the rest!
 
-### Running Locally
-
-While designed for Vercel, you can run this project locally.
-
-1.  **Clone the repository**:
-    ```bash
-    git clone https://github.com/your-username/preppal-app.git
-    cd preppal-app
-    ```
-2.  **API Key**: The application expects the `API_KEY` to be available as an environment variable. You would typically use a tool like `dotenv` and a `.env` file for local development.
-3.  **Serve the files**: Use a simple local server (like the VS Code Live Server extension) to serve the `index.html` file.
