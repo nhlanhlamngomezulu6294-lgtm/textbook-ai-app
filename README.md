@@ -22,14 +22,4 @@ PrepPal is an intelligent study application designed to help students and lifelo
 
 This project is configured to be deployed easily on Vercel.
 
-### Deployment with Vercel
-
-1.  **Fork this repository** to your own GitHub account.
-2.  Go to [Vercel](https://vercel.com/) and sign up with your GitHub account.
-3.  Click **"Add New..."** -> **"Project"**.
-4.  Import your forked repository from the list.
-5.  In the **"Environment Variables"** section, add a new variable:
-    - **Name**: `API_KEY`
-    - **Value**: Your Google Gemini API key.
-6.  Click **"Deploy"**. Vercel will handle the rest!
-
+rest!
